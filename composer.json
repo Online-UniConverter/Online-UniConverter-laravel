@@ -19,7 +19,7 @@
         "illuminate/routing": "~5.8.0|^6.0|^7.0|^8.0",
         "symfony/psr-http-message-bridge": "^1.2|^2.0",
         "nyholm/psr7": "^1.2",
-        "onlineuniconvert/onlineuniconvert-php": "dev-develop"
+        "onlineuniconvert/onlineuniconvert-php": "^2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.0|^8.0",
