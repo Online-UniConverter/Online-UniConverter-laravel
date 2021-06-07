@@ -1,0 +1,54 @@
+{
+  "name": "onlineuniconverter/onlineuniconverter-laravel",
+  "description": "Laravel PHP SDK for OnlineUniConverter APIs",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "onlineuniconvert",
+    "laravel"
+  ],
+  "homepage": "https://github.com/Online-UniConverter/Online-UniConverter-laravel",
+  "authors": [
+    {
+      "name": "00000000",
+      "email": "xxx@xx.cn"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0",
+    "illuminate/support": "~5.8.0|^6.0|^7.0|^8.0",
+    "illuminate/filesystem": "^6.0",
+    "guzzlehttp/guzzle": "~6.0",
+    "patchwork/utf8": "1.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0|^8.0",
+    "mockery/mockery": "0.9.*@dev"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "OnlineUniConverter\\Laravel\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "OnlineUniConverter\\Laravel\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "OnlineUniConverter\\Laravel\\Providers\\OnlineUniConverterServiceProvider"
+      ],
+      "aliases": {
+        "OnlineUniConverter": "OnlineUniConverter\\Laravel\\Facades\\OnlineUniConverter"
+      }
+    }
+  },
+  "scripts": {
+    "tests": [
+      "vendor/bin/phpunit --verbose"
+    ]
+  }
+}
